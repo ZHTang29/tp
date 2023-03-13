@@ -10,19 +10,20 @@ import static seedu.recipe.commons.util.AppUtil.checkArgument;
 public class Ingredient {
 
     public static final String MESSAGE_CONSTRAINTS =
-            "Ingredient names should only contain (uppercase or lowercase) alphabets, and it should not be blank.";
-    public static final String VALIDATION_REGEX = "[^\\s].*";
-    public final String name;
+            "Ingredient contain alphanumeric characters and spaces, and it should not be blank";
+    public static final String VALIDATION_REGEX = "[\\p{Alpha}][\\p{Alpha} ]*";
+    public final String value;
 
     /**
      * Constructs a {@code Ingredient}.
      *
      * @param name A valid ingredient number.
      */
-    public Ingredient(String name) {
-        requireNonNull(name);
-        checkArgument(isValidIngredient(name), MESSAGE_CONSTRAINTS);
-        this.name = name;
+
+    public Ingredient(String ingredient) {
+        requireNonNull(ingredient);
+        checkArgument(isValidIngredient(ingredient), MESSAGE_CONSTRAINTS);
+        value = ingredient;
     }
 
     /**
