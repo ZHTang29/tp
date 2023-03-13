@@ -59,7 +59,7 @@ public class ParserUtil {
     public static Ingredient parsePhone(String phone) throws ParseException {
         requireNonNull(phone);
         String trimmedPhone = phone.trim();
-        if (!Ingredient.isValidPhone(trimmedPhone)) {
+        if (!Ingredient.isValidIngredient(trimmedPhone)) {
             throw new ParseException(Ingredient.MESSAGE_CONSTRAINTS);
         }
         return new Ingredient(trimmedPhone);

@@ -2,10 +2,7 @@ package seedu.recipe.model.recipe;
 
 import static seedu.recipe.commons.util.CollectionUtil.requireAllNonNull;
 
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Objects;
-import java.util.Set;
+import java.util.*;
 
 import seedu.recipe.model.tag.Tag;
 
@@ -17,7 +14,7 @@ public class Recipe {
 
     // Identity fields
     private final Name name;
-    private final Ingredient ingredient;
+    private final List<Ingredient> ingredients;
     private final Email email;
 
     // Data fields
@@ -27,10 +24,10 @@ public class Recipe {
     /**
      * Every field must be present and not null.
      */
-    public Recipe(Name name, Ingredient ingredient, Email email, Address address, Set<Tag> tags) {
-        requireAllNonNull(name, ingredient, email, address, tags);
+    public Recipe(Name name, List<Ingredient> ingredients, Email email, Address address, Set<Tag> tags) {
+        requireAllNonNull(name, ingredients, email, address, tags);
         this.name = name;
-        this.ingredient = ingredient;
+        this.ingredients = ingredients;
         this.email = email;
         this.address = address;
         this.tags.addAll(tags);
@@ -40,8 +37,8 @@ public class Recipe {
         return name;
     }
 
-    public Ingredient getIngredient() {
-        return ingredient;
+    public List<Ingredient> getIngredient() {
+        return ingredients;
     }
 
     public Email getEmail() {
@@ -98,7 +95,7 @@ public class Recipe {
     @Override
     public int hashCode() {
         // use this method for custom fields hashing instead of implementing your own
-        return Objects.hash(name, ingredient, email, address, tags);
+        return Objects.hash(name, ingredients, email, address, tags);
     }
 
     @Override

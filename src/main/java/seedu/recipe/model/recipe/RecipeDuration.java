@@ -5,10 +5,10 @@ import seedu.recipe.model.recipe.unit.TimeUnit;
 public class RecipeDuration {
 
     private final double time;
-    private final TimeUnit duration;
+    private final TimeUnit unit;
 
-    public RecipeDuration(double time, TimeUnit duration){
+    public RecipeDuration(double time, TimeUnit unit){
         this.time = time;
-        this.duration = duration;
+        this.unit = unit;
     }
 }

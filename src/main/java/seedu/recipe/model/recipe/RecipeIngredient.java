@@ -3,7 +3,6 @@ package seedu.recipe.model.recipe;
 import seedu.recipe.model.recipe.unit.IngredientAmountUnit;
 import seedu.recipe.model.recipe.unit.Unit;
 
-import javax.swing.text.html.Option;
 import java.util.HashSet;
 import java.util.Optional;
 

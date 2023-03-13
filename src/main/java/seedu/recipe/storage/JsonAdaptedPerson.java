@@ -82,7 +82,7 @@ class JsonAdaptedPerson {
             throw new IllegalValueException(String.format(MISSING_FIELD_MESSAGE_FORMAT,
                     Ingredient.class.getSimpleName()));
         }
-        if (!Ingredient.isValidPhone(phone)) {
+        if (!Ingredient.isValidIngredient(phone)) {
             throw new IllegalValueException(Ingredient.MESSAGE_CONSTRAINTS);
         }
         final Ingredient modelIngredient = new Ingredient(phone);
