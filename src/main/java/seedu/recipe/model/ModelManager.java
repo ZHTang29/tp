@@ -24,7 +24,7 @@ public class ModelManager implements Model {
     private final FilteredList<Recipe> filteredRecipes;
 
     /**
-     * Initializes a ModelManager with the given addressBook and userPrefs.
+     * Initializes a ModelManager with the given recipeBook and userPrefs.
      */
     public ModelManager(ReadOnlyRecipeBook recipeBook, ReadOnlyUserPrefs userPrefs) {
         requireAllNonNull(recipeBook, userPrefs);
@@ -75,11 +75,11 @@ public class ModelManager implements Model {
         userPrefs.setAddressBookFilePath(recipeBookFilePath);
     }
 
-    //=========== AddressBook ================================================================================
+    //=========== RecipeBook ================================================================================
 
     @Override
-    public void setRecipeBook(ReadOnlyRecipeBook addressBook) {
-        this.recipeBook.resetData(addressBook);
+    public void setRecipeBook(ReadOnlyRecipeBook recipeBook) {
+        this.recipeBook.resetData(recipeBook);
     }
 
     @Override
@@ -115,7 +115,7 @@ public class ModelManager implements Model {
 
     /**
      * Returns an unmodifiable view of the list of {@code Recipe} backed by the internal list of
-     * {@code versionedAddressBook}
+     * {@code versionedRecipeBook}
      */
     @Override
     public ObservableList<Recipe> getFilteredRecipeList() {
