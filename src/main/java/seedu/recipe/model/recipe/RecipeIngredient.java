@@ -9,6 +9,10 @@ import java.util.Objects;
 import java.util.Optional;
 import java.util.Set;
 
+/**
+ * Represents an ingredient in a recipe ingredient in the RecipeBook when details such as amount, unit and substiutions
+ * are provided.
+ */
 public class RecipeIngredient extends Ingredient {
 
     private final double amount;

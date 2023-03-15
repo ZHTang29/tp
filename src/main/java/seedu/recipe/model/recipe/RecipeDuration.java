@@ -7,6 +7,10 @@ import seedu.recipe.model.recipe.unit.TimeUnit;
 
 import java.util.Objects;
 
+/**
+ * Represents a Recipe's duration in the RecipeBook.
+ * Guarantees: immutable; is valid as declared in {@link #isValidRecipeDuration(String)}
+ * */
 public class RecipeDuration {
 
     private final double time;
@@ -33,6 +37,11 @@ public class RecipeDuration {
         return Objects.hash(time, unit);
     }
 
+    /**
+     * Returns whether a given String is a valid RecipeDuration.
+     * @param test the string to test.
+     * @return true if the String is a valid RecipeDuration in accordance to the regex, false otherwise.
+     */
     public static boolean isValidRecipeDuration(String test) {
         if (test.matches(VALIDATION_REGEX)) {
             String[] tokens = test.split("\\s+");

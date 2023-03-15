@@ -6,7 +6,8 @@ import seedu.recipe.model.recipe.unit.PortionUnit;
 import java.util.Objects;
 
 /**
- *
+ * Represents a Recipe's portion in the RecipeBook.
+ * Guarantees: immutable; is valid as declared in {@link #isValidRecipePortion(String)}
  */
 public class RecipePortion {
 
@@ -43,6 +44,11 @@ public class RecipePortion {
         return Objects.hash(lowerRange, upperRange, portionUnit);
     }
 
+    /**
+     * Returns whether a given String is a valid RecipePortion.
+     * @param test the string to test.
+     * @return true if the String is a valid RecipePortion in accordance to the regex, false otherwise.
+     */
     public static boolean isValidRecipePortion(String test) {
         if (test.matches(VALIDATION_REGEX)) {
             String[] tokens = test.split(TOKENIZE_REGEX);
