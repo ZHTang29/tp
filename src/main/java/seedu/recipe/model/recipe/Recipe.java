@@ -47,7 +47,7 @@ public class Recipe {
     }
 
     public RecipeDuration getDuration() {
-        duration.orElseThrow(RecipePortionNotPresentException::new);
+        duration.orElseThrow(RecipeDurationNotPresentException::new);
         return duration.get();
     }
 
