@@ -105,7 +105,7 @@ Unsure or unable to remember our list of commands and how to format your inputs?
 Format:
 `help`
 
-> :bulb: Tip: `help` displays the full list of commands, their functionalities as well as example cases of how to use them!
+> :bulb: Tip: `help` a link to this user guide, which is a quick way to refresh your memory on any command that might have slipped your mind!
 
 
 ### Exiting the program: `exit`
