@@ -35,7 +35,7 @@ public class UserPrefs implements ReadOnlyUserPrefs {
     public void resetData(ReadOnlyUserPrefs newUserPrefs) {
         requireNonNull(newUserPrefs);
         setGuiSettings(newUserPrefs.getGuiSettings());
-        setAddressBookFilePath(newUserPrefs.getRecipeBookFilePath());
+        setRecipeBookFilePath(newUserPrefs.getRecipeBookFilePath());
     }
 
     public GuiSettings getGuiSettings() {
@@ -51,7 +51,8 @@ public class UserPrefs implements ReadOnlyUserPrefs {
         return recipeBookFilePath;
     }
 
-    public void setAddressBookFilePath(Path recipeBookFilePath) {
+
+    public void setRecipeBookFilePath(Path recipeBookFilePath) {
         requireNonNull(recipeBookFilePath);
         this.recipeBookFilePath = recipeBookFilePath;
     }

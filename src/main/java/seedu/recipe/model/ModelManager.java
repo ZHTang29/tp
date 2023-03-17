@@ -30,7 +30,6 @@ public class ModelManager implements Model {
         requireAllNonNull(recipeBook, userPrefs);
 
         logger.fine("Initializing with recipe book: " + recipeBook + " and user prefs " + userPrefs);
-
         this.recipeBook = new RecipeBook(recipeBook);
         this.userPrefs = new UserPrefs(userPrefs);
         filteredRecipes = new FilteredList<>(this.recipeBook.getRecipeList());
@@ -72,7 +71,7 @@ public class ModelManager implements Model {
     @Override
     public void setRecipeBookFilePath(Path recipeBookFilePath) {
         requireNonNull(recipeBookFilePath);
-        userPrefs.setAddressBookFilePath(recipeBookFilePath);
+        userPrefs.setRecipeBookFilePath(recipeBookFilePath);
     }
 
     //=========== RecipeBook ================================================================================
