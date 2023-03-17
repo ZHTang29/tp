@@ -52,7 +52,7 @@ Format:
 > Although optional, we do however still suggest adding in the other fields if possible for your own convenience.
 > We recommend you add in your own units of measurement for the optional fields! (i.e g/kg for ingredient weights)
 > If you have multiple inputs for tags, steps or ingredients, treat each input as a separate field (i.e s/Step1 s/step2)
-> Each field does not have to be inputted in order (/p can come before /d etc.)
+> Each field does not have to be input in order (/p can come before /d etc.)
 > However, for steps, please input the steps in the order that they are intended to be performed
 
 **Example(s) of usage**:
@@ -72,7 +72,7 @@ Format:
 
 > Lists all recipes that are in the storage, in the chronological order they were
 added. 
-> Depending on the size of the window, may add multiple columns to display
+> Depending on the size of the window, the user may add multiple columns to display
 more recipes.
 > In order to zoom in on a particular recipe in the list, user can double-click on the corresponding recipe
 

@@ -7,18 +7,18 @@ title: Developer Guide
 
 ## **Appendix: Requirements**
 
-###Product scope
+### Product scope
 **Target user profile:**
 * has a need to manage a large number of recipes and their relevant information
-* prefers desktop applications to other types
-* ability to type fast
+* prefers desktop applications to mobile applications
+* types fast
 * prefers typing to mouse interactions
 
 **Value proposition:** manage recipes more conveniently and quickly as opposed to a typical mouse app
 
 ### User stories
 
-Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (possible but unlikely to add) - `*`
+Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unlikely to have) - `*`
 
 | Priority | As a …​  | I want to …​                 | So that I can…​                                        |
 |----------|----------|------------------------------|--------------------------------------------------------|
@@ -140,7 +140,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (poss
 **MSS**
 
 1. Chef requests for help
-2. Book shows a list of all commands, what they do, and example usage
+2. Book shows a list of the descriptions and example usages of all commands
 
     Use case ends.
 
