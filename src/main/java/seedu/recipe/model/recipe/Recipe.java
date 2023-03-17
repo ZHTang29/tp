@@ -1,6 +1,7 @@
 package seedu.recipe.model.recipe;
 
 import seedu.recipe.model.recipe.exceptions.RecipePortionNotPresentException;
+import seedu.recipe.model.recipe.exceptions.RecipeDurationNotPresentException;
 import seedu.recipe.model.tag.Tag;
 
 import java.util.ArrayList;
