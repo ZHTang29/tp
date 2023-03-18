@@ -1,8 +1,8 @@
 package seedu.recipe.model.recipe.exceptions;
 
 /**
- * Signals that the operation cannot be completed because the recipe portion field has not been previously filled
- * (Recipe portion can only be returned if it is a field that is previously populated by user).
+ * Represents the exception that arises when a parameter string not containing a portion is passed into the
+ * factory method {@code ::of} of the RecipePortion class.
  */
 public class RecipePortionNotPresentException extends RuntimeException {
     public RecipePortionNotPresentException() {

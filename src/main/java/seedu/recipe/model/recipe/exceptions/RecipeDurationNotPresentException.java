@@ -1,8 +1,8 @@
 package seedu.recipe.model.recipe.exceptions;
 
 /**
- * Signals that the operation cannot be completed because the recipe duration field has not been previously filled
- * (Recipe duration can only be returned if it is a field that is previously populated by user).
+ * Represents the exception that arises when a parameter string not containing a duration is passed into the
+ * factory method {@code ::of} of the RecipeDuration class.
  */
 public class RecipeDurationNotPresentException extends RuntimeException {
     public RecipeDurationNotPresentException() {
