@@ -140,7 +140,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 **MSS**
 
 1. Chef requests for help
-2. Book shows a list of the descriptions and example usages of all commands
+2. Book shows the link to the user guide
 
     Use case ends.
 
