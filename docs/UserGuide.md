@@ -12,9 +12,7 @@ which is why [***RIZZ***ipe](#what-is-rizzipe) is designed and built just for ch
 * If you want to run ***RIZZ***ipe for the first time, check out our handy [Quick Start guide](#quick-start).
 * If you want to learn how to use ***RIZZ***ipe, refer to our [Commands](#commands) section for a detailed guide on how to run each command.
 * For experienced developers interested in our design decisions, please refer to our Developer Guide.
-
-* For **experienced users**, you may refer to the [Command summary](#command-summary) and [Keyboard shortcuts summary](#keyboard-shortcuts-summary) 
-for a summarised table of all the commands and keyboard shortcuts available.
+* For **experienced users**, you may refer to the [Command summary](#command-summary) and [Keyboard shortcuts summary](#keyboard-shortcuts-summary) for a summarised table of all the commands and keyboard shortcuts available.
 
 <div style="page-break-after: always;"></div>
 
